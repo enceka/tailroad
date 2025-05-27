@@ -1,0 +1,10 @@
+{{ define "content" }}
+<div class="text-sm text-gray-700 dark:text-gray-300">
+  {{ .Content }}
+</div>
+{{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
+{{ range $paginator.Pages }}
+{{ partial "card.html" . }}
+{{ end }}
+{{ partial "pagination.html" . }}
+{{ end }}

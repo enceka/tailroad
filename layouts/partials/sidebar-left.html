@@ -1,0 +1,9 @@
+{{- $isSingle := .IsPage -}}
+<div class="space-y-2">
+    {{ if not $isSingle }}
+        {{- partial "widgets/author.html" . -}}
+        {{- partial "widgets/recent.html" . -}}
+        {{- partial "widgets/social.html" . -}}    
+    {{ end }}
+    
+</div>

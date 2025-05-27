@@ -1,0 +1,23 @@
+{{- define "content" -}}
+<h1 class="text-3xl font-bold mb-2">{{- .Title -}}</h1>
+
+{{- $words := .WordCount -}}
+{{- $wpm := 200 -}}
+{{- $minutes := div (add $words (sub $wpm 1)) $wpm -}}
+{{- $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" -}}
+{{- $dateHuman := .Date | time.Format ":date_long" -}}
+<div class="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400 mb-6">
+  {{- $minutes -}} min read
+  <p> . </p>
+  <time datetime="{{- $dateMachine -}}">
+    {{- $dateHuman -}}
+  </time>
+</div>
+
+<article class="prose dark:prose-invert max-w-none">
+  {{- .Content -}}
+</article>
+
+{{- partial "terms.html" (dict "taxonomy" "tags" "icon" "fa-tags" "page" .) -}}
+{{- partial "comments.html" . -}}
+{{- end -}}

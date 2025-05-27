@@ -1,0 +1,20 @@
+name: TailRoad
+licenseL: 'GPLv3'
+licenselink: 'https://github.com/Sathishbs/tailroad/blob/develop/LICENSE'
+description: 'HUGO Theme using TailWindCSS4'
+
+# The home page of the theme, where the source can be found
+homepage: 'https://github.com/Sathishbs/tailroad'
+
+# If you have a running demo of the theme
+demosite: 'https://tailroad.netlify.app'
+
+# Taxonomy terms
+tags: ['blog', 'widgets', 'theme']
+features: ['Theme Switching', 'Search']
+
+
+# If the theme has a single author
+author:
+  name = 'Sathish'
+  homepage = ''

@@ -1,0 +1,56 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+@source "hugo_stats.json";
+
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+
+
+@layer components {
+  .code-block-wrapper {
+    @apply border border-[--color-light-border] rounded-md overflow-hidden my-4 bg-[#f9f9f9];
+  }
+
+  .code-block-header {
+    @apply flex justify-between items-center bg-[#eee] text-[#333] text-xs font-bold px-3 py-1 font-mono;
+  }
+
+  .code-block-wrapper pre {
+    @apply m-0 p-3 overflow-x-auto bg-[#fdfdfd];
+  }
+
+  .copy-button {
+    @apply bg-none border-none cursor-pointer p-0 text-[--color-light-accent-light] flex items-center;
+  }
+
+  .copy-button svg {
+    @apply w-[1em] h-[1em];
+  }
+}
+
+#toc-list ul {
+  @apply list-disc pl-4 space-y-1;
+}
+
+#toc-list li {
+  @apply mb-1;
+}
+
+#toc-list li li {
+  @apply pl-1 list-[circle];
+}
+
+#toc-list li li li {
+  @apply pl-1 list-[square];
+}
+
+.toc-collapsed ul {
+  display: none;
+}
+
+.toc-expanded ul {
+  display: block;
+}
+
+.toc-active > a {
+  @apply font-semibold text-blue-600 dark:text-blue-400;
+}
