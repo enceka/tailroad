@@ -1,16 +1,19 @@
+# NPM
+node_modules/
+npm-debug.log
+
+# IDE
+.idea
+*.sublime-project
+*.sublime-workspace
+.vscode/*
+
+# OS
+._*
 Thumbs.db
 .DS_Store
-.dist
-.tmp
-.lock
-.sass-cache
-npm-debug.log
-node_modules
-builds
-package-lock.json
-public
-resources
-.hugo_build.lock
-jsconfig.json
-go.sum
-yarn.lock
+.Trashes
+.Spotlight-V100
+.AppleDouble
+.LSOverride
+Desktop.ini
