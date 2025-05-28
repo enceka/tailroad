@@ -2,14 +2,14 @@
 {{- if .IsPage -}}
   {{- if .Params.toc -}}
     {{- $showSideBar = true -}}
-  {{/*  {{- else -}}
-    {{- $showSideBar = false -}}  */}}
+  {{- else -}}
+    {{- $showSideBar = false -}}
   {{- end -}}
 {{- end -}}
 
 <!DOCTYPE html>
 <html 
-data-theme="dark" 
+data-theme="" 
 id="theme-root" 
 lang="{{- site.Language.LanguageCode -}}" 
 dir="{{- or site.Language.LanguageDirection `ltr` -}}">
@@ -21,7 +21,7 @@ dir="{{- or site.Language.LanguageDirection `ltr` -}}">
 <body class="flex flex-col text-gray-900 dark:text-white bg-white dark:bg-gray-900">
   {{- partial "header.html" . -}}  
   
-  <main id="main-content" class="w-full">
+  <main id="main-content" class="w-full" role="main">
     <div class="mx-auto max-w-5xl w-full py-6 px-4 sm:px-6 lg:px-8">
 
       {{- if $showSideBar -}} 
@@ -37,9 +37,9 @@ dir="{{- or site.Language.LanguageDirection `ltr` -}}">
       </section>
       
       {{- if $showSideBar -}}
-        <aside id="sidebar-right" 
-        class="hidden lg:block sticky top-0 rounded shadow 
-              {{- if .IsPage -}}max-h-[calc(100vh-6rem)]{{- end -}}">
+        <aside id="sidebar-right" aria-label="Sidebar"
+        class="hidden lg:block sticky  rounded shadow   
+              {{ if .IsPage }} top-16 max-h-[calc(100vh-6rem)] {{ end }}">
           {{- partial "sidebar-right.html" . -}}
         </aside>
       {{- end -}}

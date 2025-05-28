@@ -1,7 +1,7 @@
 {{- $isSingle := .IsPage -}}
 {{- $showToc := .Params.toc -}}
 
-<div class="sticky space-y-2">
+<div class="space-y-2">
     {{- range .Site.Params.sidebar.widgets -}}
         {{- if and (eq . "recent") (not $isSingle) -}}
             {{- partial "widgets/recent.html" . -}}
@@ -18,8 +18,10 @@
     {{- end -}}
 
     {{- if and $isSingle $showToc}}
-        <div class="overflow-y-auto h-full px-2">
+        <div class="px-2">
             {{- partial "widgets/toc.html" . -}}
         </div>
     {{- end -}}
 </div>
+
+

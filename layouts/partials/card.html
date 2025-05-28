@@ -5,7 +5,7 @@
         <div id="content" class="flex flex-col justify-between">
             <div>
                 <header class="mb-2">
-                    <h2 class="text-lg font-semibold text-gray-900 dark:text-white line-clamp-2">
+                    <h2 class="text-lg font-semibold text-gray-900 dark:text-white line-clamp-1">
                         {{- .Title -}}
                     </h2>
                     {{- with .Summary -}}
@@ -20,7 +20,7 @@
                 </span>
                 {{- with .Params.categories -}}
                 <span class="flex items-center gap-2">
-                    <i class="fas fa-folder-open"></i>
+                    <i class="fas fa-folder"></i>
                 <div class="justify-end">
                     {{- range first 4 . -}}
                     <span
