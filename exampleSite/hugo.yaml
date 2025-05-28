@@ -1,12 +1,12 @@
-baseURL: "/"
+baseURL: "https://tailroad.netlify.app"
 title: TailRoad
 languageCode: en-US
-theme: TailRoad
+theme: ../..
 
 params:  
   logo:
     image: images/logo.svg #LOGO takes precedence over title
-    title: Another HUGO theme
+    title: MySite
   copyright: example.org.  Some rights reserved.
   mainSections: ['posts']
   author:
