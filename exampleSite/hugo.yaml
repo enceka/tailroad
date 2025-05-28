@@ -1,4 +1,4 @@
-baseURL: "https://tailroad.netlify.app"
+baseURL: "/"
 title: TailRoad
 languageCode: en-US
 theme: tailroad
@@ -22,22 +22,22 @@ params:
     recentsCount: 6 # Default is 5
     widgets: ['recent', 'categories', 'tags', 'social']
     social:
-      email: admin@pujikrish.com
-      linkedin: sathish-s-2b0a8b140
-      github: Sathishbs
-      facebook: peter.sakshi
-      twitter: Sathish5223187
-      instagram: knightking_insta
-      telegram: sathish
+      email: admin@example.com
+      linkedin: example-2b0a8b140
+      github: example
+      facebook: example
+      twitter: example
+      instagram: example
+      telegram: example
       custom:
         gitlab:
           name: GitLab 
           icon: images/gitlab.svg
-          url: https://gitlab.com/Sathishbs
+          url: https://gitlab.com/example
         bitbucket: 
           name: BitBucket
           icon: images/bitbucket.svg
-          url: https://gitlab.com/Sathishbs
+          url: https://gitlab.com/example
 
 pagination:
   pagerSize: 8
@@ -67,7 +67,7 @@ menu:
 
 services:
   disqus:
-    shortname: tailroad
+    shortname: ""
 
 # This is required for TailWindCSS to cleanup ununsed css styles
 # Refer to this link https://gohugo.io/functions/css/tailwindcss/  
