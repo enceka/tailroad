@@ -1,7 +1,7 @@
 baseURL: "https://tailroad.netlify.app"
 title: TailRoad
 languageCode: en-US
-theme: ../..
+theme: tailroad
 
 params:  
   logo:
