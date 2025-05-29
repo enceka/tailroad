@@ -1,8 +1,23 @@
-# Tailroad — A Clean, Responsive Hugo Theme with Tailwind CSS
+---
+title: Getting Started with TailRoad
+description: Instructions for setting up a new site with Tailroad theme
+date: 2025-05-27
+image: /images/teacher.png
+categories:
+  - "Tutorials"
+tags:
+  - "demo"
+  - "markdown"
+  - "blog"
+toc: true
+---
 
 Inspired by the Mainroad theme, I created this theme with a similar structure but wanted to avoid spending excessive time writing tedious CSS. Instead, I leveraged the power of Tailwind CSS for styling. The name Tailroad is a blend of both — Tail from Tailwind and road from Mainroad.
+<!--more--> 
 
-A minimal, responsive theme for [Hugo](https://gohugo.io), built using [Tailwind CSS](https://tailwindcss.com). It’s designed for simplicity, speed, and flexibility.
+# Tailroad — A Clean, Responsive Hugo Theme with Tailwind CSS
+
+Tailroad is a minimal, responsive theme for [Hugo](https://gohugo.io), built using [Tailwind CSS](https://tailwindcss.com). It’s designed for simplicity, speed, and flexibility.
 
 [Demo](https://tailroad.netlify.app) | [Download](https://github.com/sathishbs/tailroad.git)
 
