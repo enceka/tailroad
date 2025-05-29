@@ -6,7 +6,7 @@ A minimal, responsive theme for [Hugo](https://gohugo.io), built using [Tailwind
 
 [Demo](https://tailroad.netlify.app) | [Download](https://github.com/sathishbs/tailroad.git)
 
-![Final Screen shot: TODO](images/screenshot.png)
+![Screen shot](https://github.com/Sathishbs/tailroad/blob/develop/images/screenshot.png)
 
 ## Features
 
@@ -72,7 +72,7 @@ We have completed the basic configuration required to see the theme working.  Ru
 hugo server -D
 ```
 
-![Screen Shot](images/homepage.png)
+![Screen Shot](https://github.com/Sathishbs/tailroad/blob/develop/images/homepage.png)
 
 ### 4. Add Content to the site.
 To add content to  Hugo site, use the hugo new command followed by the desired content path. 
