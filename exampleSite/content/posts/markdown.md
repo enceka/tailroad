@@ -130,10 +130,11 @@ Press <kbd>X</kbd> to win. Or press <kbd><kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>F</
 
 ### Figure with Caption
 {{< figure
-  src="https://pixabay.com/get/g4ce878612e0894cc70164069910d538bcbd59d27786a4d0fcd30d335afa916a88c54f54e0bad93ab20a36097718035e1737d19db4b59fc94a034d61ed2c3eec6_1280.jpg"
-  alt="View on pixabay"
-  link="https://pixabay.com/photos/sunset-sand-beach-islands-leaf-7133867/"
-  caption="Sunset Sand"
+  src="https://picsum.photos/200/300.jpg"
+  alt="Tailroad Screenshot"
+  link="https://picsum.photos/"
+  align="center"
+  caption="Screenshot"
   class="ma0 w-75"
 >}}
 
