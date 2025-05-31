@@ -5,7 +5,9 @@
 <article class="prose dark:prose-invert max-w-none">
   {{- .Content -}}
 </article>
+<br>
 
 {{- partial "terms.html" (dict "taxonomy" "tags" "icon" "fa-tags" "page" .) -}}
+<br>
 {{- partial "comments.html" . -}}
 {{- end -}}
