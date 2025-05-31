@@ -64,7 +64,3 @@ menu:
     - identifier: contact
       name: Coffee
       url: /hugo/coffee/
-
-services:
-  disqus:
-    shortname: ""
