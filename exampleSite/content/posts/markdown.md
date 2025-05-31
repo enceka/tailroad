@@ -8,6 +8,7 @@ menu:
   main:
     title: Markdown
 image: /images/documentation.png
+pinned: true
 ---
 
 This page offers a brief overview of what it’s like to use Markdown.  Should be very easy to pick up simply by looking at a few examples of it in action.

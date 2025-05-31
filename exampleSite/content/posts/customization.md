@@ -157,6 +157,16 @@ pagination:
   pagerSize: 8
 ```
 
+### Pinned Posts
+By default posts are sorted in date desecending.  However, *TailRoad* theme supports to pin posts and display the post that is most required first. Make a note all the pinned posts are sorted as per the date posted.  Make the posts pinned through the frontmatter.
+
+```yaml
+---
+title: Pinned post
+pinned: true
+---
+```
+
 ### Comments
 *TailRoad* supports comments from disqus.  Create a shortname in the disqus platform and provide the same here to enable comments on the page.  By default every page will display the comments section in the footer.  Control tthis default behavior using front matter.  Refer the front matter section below for more information.
 
