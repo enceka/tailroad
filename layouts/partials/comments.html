@@ -1,11 +1,17 @@
-{{- $server := "" }}
-{{- if ge (int (index (split hugo.Version ".") 1)) "120" }}
-	{{- $server = hugo.IsServer }}
-{{- else }}
-	{{- $server = .Site.IsServer }}
-{{- end }}
-{{- if and .Site.Config.Services.Disqus.Shortname (index .Params "comments" | default "true") (not $server) }}
-<section>
-	{{ template "_internal/disqus.html" . }}
-</section>
+{{- if and .Site.Config.Services.Disqus.Shortname (index .Params "comments" | default "true") (not hugo.IsServer) }}
+<script src="https://giscus.app/client.js"
+        data-repo="Sathishbs/troadments"
+        data-repo-id="R_kgDOOz4FfA"
+        data-category="General"
+        data-category-id="DIC_kwDOOz4FfM4Cq3Tt"
+        data-mapping="pathname"
+        data-strict="1"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="preferred_color_scheme"
+        data-lang="en"
+        crossorigin="anonymous"
+        async>
+</script>
 {{- end }}
