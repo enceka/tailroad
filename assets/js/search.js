@@ -70,7 +70,12 @@ async function searchContent() {
 
 function activateSearchControl() {
   document.addEventListener('keydown', function (e) {
-    const isMac = navigator.userAgentData.platform.toUpperCase().includes('MAC');
+    let isMac = false;
+    if (navigator.userAgentData) {
+      isMac = navigator.userAgentData.platform.toUpperCase().includes("MAC");
+    } else {
+      isMac = navigator.platform.toUpperCase().includes("MAC");
+    }
     const key = e.key.toLowerCase();
 
     if ((isMac && e.metaKey && key === 'k') || (!isMac && e.ctrlKey && key === 'k')) {
@@ -91,7 +96,12 @@ function activateSearchControl() {
 function setKeyboardShortcut() {
   const shortcut = document.getElementById("search-shortcut");
   if (shortcut) {
-    const isMac = navigator.userAgentData.platform.toUpperCase().includes("MAC");
+    let isMac = false;
+    if (navigator.userAgentData) {
+      isMac = navigator.userAgentData.platform.toUpperCase().includes("MAC");
+    } else {
+      isMac = navigator.platform.toUpperCase().includes("MAC");
+    }
     shortcut.textContent = isMac ? "⌘+k" : "Ctrl+k";
   }
 }

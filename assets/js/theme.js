@@ -33,4 +33,3 @@ function initTheme() {
 }
 
 document.addEventListener('DOMContentLoaded', initTheme);
-console.log("Theme.js loaded");
