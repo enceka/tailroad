@@ -168,12 +168,18 @@ pinned: true
 ```
 
 ### Comments
-*TailRoad* supports comments from disqus.  Create a shortname in the disqus platform and provide the same here to enable comments on the page.  By default every page will display the comments section in the footer.  Control tthis default behavior using front matter.  Refer the front matter section below for more information.
+*TailRoad* supports comments from Github Giscus. Create a new public repository to store the comments and create an entry in the [giscus app] to generate a script that and get those values into the config yaml.  
 
 ```yaml
-services:
-  disqus:
-    shortname: ""
+Params:
+  giscus:
+    repo: ""
+    repoid: ""
+    category: ""
+    categoryid: ""
+    mapping: ""    
+    theme: ""
+    lang: ""
 ```
 
 ## Footer

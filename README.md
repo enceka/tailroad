@@ -17,7 +17,7 @@ A minimal, responsive theme for [Hugo](https://gohugo.io), built using [Tailwind
 - Modular layout using Hugo partials
 - Support for tags, categories, authors
 - Pagination and summaries
-- Disqus comments integration
+- Giscus comments integration
 - Scroll-to-top button
 
 ## Getting Started
